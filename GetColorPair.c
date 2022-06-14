@@ -1,10 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
-
-typedef struct {
-    enum MajorColor majorColor;
-    enum MinorColor minorColor;
-} ColorPair;
+#include <main.h>
+extern ColorPair colorPair_cp;
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
@@ -13,11 +10,11 @@ void ColorPairToString(const ColorPair* colorPair, char* buffer) {
 }
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
-    ColorPair colorPair;
+    
     int zeroBasedPairNumber = pairNumber - 1;
-    colorPair.majorColor = 
+    colorPair_cp.majorColor = 
         (enum MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
-    colorPair.minorColor =
+    colorPair_cp.minorColor =
         (enum MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
     return colorPair;
 }
