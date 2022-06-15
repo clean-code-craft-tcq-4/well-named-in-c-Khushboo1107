@@ -11,6 +11,7 @@ void GetColorManual(void)
         ColorPair info = GetColorFromPairNumber(i);
   char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
     ColorPairToString(&info, colorPairNames);
+          printf("%d", i);
                 
         }
 }
