@@ -15,7 +15,7 @@ int numberOfMajorColors =
 int numberOfMinorColors =
     sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
-const int MAX_COLORPAIR_NAME_CHARS = 16;
+extern const int MAX_COLORPAIR_NAME_CHARS;
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
      sprintf(buffer, "%s %s",
