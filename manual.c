@@ -4,6 +4,7 @@
 
 extern const char* MinorColorNames[];
 extern const char* MajorColorNames[];
+extern const int MAX_COLORPAIR_NAME_CHARS;
 
 void GetColorManual(const ColorPair* colorPair, char* buffer)
 { sprintf(buffer, "Color code = %s %s",
