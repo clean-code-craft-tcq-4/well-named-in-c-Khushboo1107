@@ -12,10 +12,3 @@ void GetColorManual(const ColorPair* colorPair, char* buffer)
         MinorColorNames[colorPair->minorColor]);
  printf("%s",buffer);
 }
-
-int main(){
-        for(int i=0; i<MAX_COLORPAIR_NAME_CHARS;i++)
-           {
-                GetColorManual();
-            }
-}
