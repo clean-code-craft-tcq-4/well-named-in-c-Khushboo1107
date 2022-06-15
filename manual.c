@@ -2,6 +2,9 @@
 #include <assert.h>
 #include "main.h"
 
+extern const char* MinorColorNames[];
+extern const char* MajorColorNames[];
+
 void GetColorManual(const ColorPair* colorPair, char* buffer)
 { sprintf(buffer, "Color code = %s %s",
         MajorColorNames[colorPair->majorColor],
