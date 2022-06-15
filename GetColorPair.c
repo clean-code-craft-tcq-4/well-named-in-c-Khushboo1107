@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <assert.h>
 #include "main.h"
-extern char* MajorColorNames[];
-extern char* MinorColorNames[];
+extern const char* MajorColorNames[];
+extern const char* MinorColorNames[];
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
      sprintf(buffer, "%s %s",
         MajorColorNames[colorPair->majorColor],
