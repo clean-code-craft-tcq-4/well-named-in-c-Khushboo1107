@@ -9,5 +9,9 @@ int main() {
     testPairToNumber(BLACK, ORANGE, 12);
     testPairToNumber(VIOLET, SLATE, 25);
 
+      for(int i=0; i<MAX_COLORPAIR_NAME_CHARS;i++)
+           {
+                GetColorManual();
+            }
     return 0;
 }
