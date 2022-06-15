@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include "main.h"
-extern ColorPair colorPair_cp;
+extern ColorPair colorPair;
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
@@ -11,11 +11,11 @@ void ColorPairToString(const ColorPair* colorPair, char* buffer) {
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
     int zeroBasedPairNumber = pairNumber - 1;
-    colorPair_cp.majorColor = 
+    colorPair.majorColor = 
         (enum MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
-    colorPair_cp.minorColor =
+    colorPair.minorColor =
         (enum MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
-    return colorPair_cp;
+    return colorPair;
 }
 
 void testNumberToPair(int pairNumber,
