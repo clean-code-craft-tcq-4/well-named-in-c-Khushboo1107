@@ -13,5 +13,5 @@ void GetColorManual(void)
    // ColorPairToString(&info, colorPairNames);
       //    printf("%d", i);
                 
-        }
+       // }
 }
