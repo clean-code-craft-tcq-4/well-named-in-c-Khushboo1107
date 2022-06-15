@@ -24,7 +24,9 @@ extern int numberOfMinorColors;
                    for( int k=0; j<numberOfMinorColors; k++)
                    {
                        printf("%d",i);
-                       testNumberToPair(i,j,k);
+                       testNumberToPair(i, 
+                                        MajorColorNames[colorPair->majorColor],
+                                        MinorColorNames[colorPair->minorColor]);
                    }
                }
             }
