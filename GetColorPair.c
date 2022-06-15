@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <assert.h>
 #include "main.h"
+int num=9;
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
-    sprintf(buffer, "%s %s",
-        'abc'],
-        'abc']);
+    sprintf(buffer, "%d",num);
 }
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
