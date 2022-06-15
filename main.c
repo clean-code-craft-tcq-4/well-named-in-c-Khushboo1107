@@ -3,13 +3,6 @@
 #include "main.h"
 
 int main() {
-extern const char* MajorColorNames;
-
-extern const char* MinorColorNames;
-
-extern int numberOfMajorColors;
-
-extern int numberOfMinorColors;
 
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
@@ -19,15 +12,12 @@ extern int numberOfMinorColors;
 
       for(int i=1; i<=25;i++)
            {
-               for( int j=0; j<numberOfMajorColors; j++)
+               for( int j=0; j<5; j++)
                {
-                   for( int k=0; j<numberOfMinorColors; k++)
+                   for( int k=0; j<5; k++)
                    {
-                       ColorPair colorPair;
-                       printf("%d",i);
-                       testNumberToPair(i, 
-                                        MajorColorNames[colorPair->majorColor],
-                                        MinorColorNames[colorPair->minorColor]);
+                       printf("%d %s %s",i, MajorColorNames[j],MinorColorNames[k]);
+                      
                    }
                }
             }
