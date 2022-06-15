@@ -10,13 +10,12 @@ void ColorPairToString(const ColorPair* colorPair, char* buffer) {
 }
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
-    ColorPair colorPair_p;
     int zeroBasedPairNumber = pairNumber - 1;
     colorPair_cp.majorColor = 
         (enum MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
     colorPair_cp.minorColor =
         (enum MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
-    return colorPair_p;
+    return colorPair_cp;
 }
 
 void testNumberToPair(int pairNumber,
