@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
 #include "main.h"
-#include "GetPairNumber.h"
 extern ColorPair colorPair_cp;
 
 int GetPairNumberFromColor(const ColorPair* colorPair) {
