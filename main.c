@@ -12,6 +12,8 @@ int main() {
 
       for(int i=1; i<=25;i++)
            {
+          printf("%d",i);
+      }
                for( int j=0; j<5; j++)
                {
                    for( int k=0; j<5; k++)
@@ -20,6 +22,5 @@ int main() {
                       
                    }
                }
-            }
     return 0;
 }
