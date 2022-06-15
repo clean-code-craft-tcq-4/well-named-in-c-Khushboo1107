@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
 #include "main.h"
-#include "GetColorPair.h"
 extern ColorPair colorPair_cp;
 extern MajorColorNames;
 extern MinorColorNames;
