@@ -3,8 +3,8 @@
 #include "main.h"
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
-        "abc"],
-        "abc"]);
+        'abc'],
+        'abc']);
 }
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
