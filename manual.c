@@ -6,7 +6,7 @@ extern const char* MinorColorNames[];
 extern const char* MajorColorNames[];
 extern const int MAX_COLORPAIR_NAME_CHARS;
 
-void GetColorManual()
+void GetColorManual(void)
 { 
         for(int i=2; i<=26;i++)
         {
