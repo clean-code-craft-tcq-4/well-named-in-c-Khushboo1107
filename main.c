@@ -12,7 +12,7 @@ int main() {
 
       for(int i=0; i<MAX_COLORPAIR_NAME_CHARS;i++)
            {
-                GetColorManual(const ColorPair* colorPair, char* buffer);
+                GetColorManual(&colorPair, colorPairNames);
             }
     return 0;
 }
