@@ -6,9 +6,13 @@ extern const char* MinorColorNames[];
 extern const char* MajorColorNames[];
 extern const int MAX_COLORPAIR_NAME_CHARS;
 
-void GetColorManual(const ColorPair* colorPair, char* buffer)
-{ sprintf(buffer, "Color code = %s %s",
-        MajorColorNames[colorPair->majorColor],
-        MinorColorNames[colorPair->minorColor]);
- printf("%s",buffer);
+void GetColorManual()
+{ 
+        for(int i=2; i<=26;i++)
+        {
+        ColorPair colorPair = GetColorFromPairNumber(i);
+  char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
+    ColorPairToString(&colorPair, colorPairNames);
+                
+        }
 }
