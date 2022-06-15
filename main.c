@@ -16,7 +16,7 @@ int main() {
                {
                    for( int k=0; j<5; k++)
                    {
-                       printf("%d %s %s",i, MajorColorNames[j],MinorColorNames[k]);
+                       printf("%d %s %s",i, MajorColor[j],MinorColor[k]);
                       
                    }
                }
