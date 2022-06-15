@@ -3,6 +3,8 @@
 #include "main.h"
 #include "GetColorPair.h"
 extern ColorPair colorPair_cp;
+extern MajorColorNames;
+extern MinorColorNames;
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
