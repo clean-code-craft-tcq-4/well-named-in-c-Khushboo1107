@@ -2,8 +2,6 @@
 #include <assert.h>
 #include "main.h"
 extern ColorPair colorPair_cp;
-extern MajorColorNames;
-extern MinorColorNames;
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
