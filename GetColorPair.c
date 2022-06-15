@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
-#include <main.h>
-#include <GetColorPair.h>
+#include "main.h"
+#include "GetColorPair.h"
 extern ColorPair colorPair_cp;
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
