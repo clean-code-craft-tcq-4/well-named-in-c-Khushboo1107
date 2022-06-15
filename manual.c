@@ -2,8 +2,6 @@
 #include <assert.h>
 #include "main.h"
 
-extern const char* MinorColorNames[];
-extern const char* MajorColorNames[];
 extern const int MAX_COLORPAIR_NAME_CHARS;
 
 void GetColorManual(void)
