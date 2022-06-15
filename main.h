@@ -8,8 +8,6 @@ typedef struct {
     enum MinorColor minorColor;
 } ColorPair;
 
-int numberOfMinorColors =
-    sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
 int GetPairNumberFromColor(const ColorPair* colorPair);
 void testPairToNumber(
