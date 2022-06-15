@@ -3,6 +3,7 @@
 #include "main.h"
 
 int main() {
+    const int MAX_COLORPAIR_NAME_CHARS = 16;
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
 
