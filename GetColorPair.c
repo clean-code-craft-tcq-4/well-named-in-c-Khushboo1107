@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <assert.h>
 #include "main.h"
-int num=9;
+extern MajorColorNames;
+extern MinorColorNames;
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
-    sprintf(buffer, "%d",num);
+     sprintf(buffer, "%s %s",
+        MajorColorNames[colorPair->majorColor],
+        MinorColorNames[colorPair->minorColor]);
 }
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
