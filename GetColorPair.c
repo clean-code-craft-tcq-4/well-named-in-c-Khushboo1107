@@ -1,19 +1,13 @@
 #include <stdio.h>
 #include <assert.h>
 #include "main.h"
-const char* MajorColorNames[] = {
-    "White", "Red", "Black", "Yellow", "Violet"
-};
+extern const char* MajorColorNames;
 
-const char* MinorColorNames[] = {
-    "Blue", "Orange", "Green", "Brown", "Slate"
-};
+extern const char* MinorColorNames;
 
-int numberOfMajorColors =
-    sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
+extern int numberOfMajorColors; 
 
-int numberOfMinorColors =
-    sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
+extern int numberOfMinorColors;
 
 extern const int MAX_COLORPAIR_NAME_CHARS;
 
