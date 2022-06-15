@@ -5,13 +5,13 @@
 extern const int MAX_COLORPAIR_NAME_CHARS;
 
 void GetColorManual(void)
-{ 
-        for(int i=1; i<=25;i++)
-        {
-        ColorPair info = GetColorFromPairNumber(i);
-  char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
-    ColorPairToString(&info, colorPairNames);
-          printf("%d", i);
+{ printf("%d",1);
+        //for(int i=1; i<=25;i++)
+      //  {
+    //    ColorPair info = GetColorFromPairNumber(i);
+ // char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
+   // ColorPairToString(&info, colorPairNames);
+      //    printf("%d", i);
                 
         }
 }
